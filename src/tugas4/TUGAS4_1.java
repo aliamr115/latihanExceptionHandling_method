@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author user
+ * @author alia
  */
 public class TUGAS4_1 {
     public double luas_lingkaran(int diameter){
@@ -38,36 +38,36 @@ public static void main(String[]args){
     TUGAS4_1 count = new TUGAS4_1();
     Scanner input = new Scanner(System.in);
     String status = ""; double hasil = 0;
-    System.out.println("Pilihan :\n"
-                + "1.Luas lingkaran\n"
-                + "2.volume tabung\n"
-                + "3.volume kerucut\n"
-                + "4. volume bola\n");
+    System.out.println("PILIHAN :\n"
+                + "1.Luas Lingkaran\n"
+                + "2.Volume Tabung\n"
+                + "3.Volume Kerucut\n"
+                + "4.Volume Bola\n");
     
-    System.out.println("Masukkan pilihan: ");
+    System.out.print("Masukkan pilihan: ");
     byte pilihan = input.nextByte();
     
     if(pilihan == 1){
-        System.out.println("Masukkan diameter: ");
+        System.out.print("Masukkan diameter: ");
         int diameter = input.nextInt();
         hasil  = count.luas_lingkaran(diameter);
         status = "Menghitung luas lingkaran";
     } else if (pilihan == 2){
-         System.out.println("Masukkan diameter: ");
+         System.out.print("Masukkan diameter: ");
         int diameter = input.nextInt();
-        System.out.println("Masukkan tinggi: ");
+        System.out.print("Masukkan tinggi: ");
         int tinggi = input.nextInt();
         hasil  = count.volume_tabung(diameter,tinggi);
         status = "Menghitung volume tabung";
     } else if (pilihan == 3){
-         System.out.println("Masukkan diameter: ");
+         System.out.print("Masukkan diameter: ");
         int diameter = input.nextInt();
-        System.out.println("Masukkan tinggi: ");
+        System.out.print("Masukkan tinggi: ");
         int tinggi = input.nextInt();
         hasil  = count.volume_kerucut(diameter,tinggi);
         status = "Menghitung volume kerucut";
 } else if (pilihan == 4){
-         System.out.println("Masukkan diameter: ");
+         System.out.print("Masukkan diameter: ");
         int diameter = input.nextInt();
         hasil  = count.volume_bola(diameter);
         status = "Menghitung volume bola"; 
