@@ -9,7 +9,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author user
+ * @author alia
  */
 public class TUGAS4_2 {
     public double luas_persegipanjang (int panjang, int lebar){
